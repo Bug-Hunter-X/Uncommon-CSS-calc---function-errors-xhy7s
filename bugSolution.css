@@ -1,0 +1,26 @@
+/* Correct usage of calc() */
+#example {
+  width: calc(100% - 10px);
+  height: calc(50vh + 20px);
+  padding: calc((100% - 20px) / 2);
+}
+
+/* Incorrect usage of calc() - missing spaces*/
+/* #example {
+  width:calc(100%-10px); /* Incorrect */
+} */
+
+/* Incorrect usage of calc() - incompatible units*/
+/* #example {
+  width: calc(100% + 10px); /* Incorrect */
+} */
+
+/* Incorrect usage of calc() - nested too much*/
+/* #example {
+  width: calc(calc(100% - 20px) / 2);
+} */
+
+/* Incorrect usage of calc() - non-numerical value*/
+/* #example {
+  width: calc(100% + "10px"); /* Incorrect */
+} */
